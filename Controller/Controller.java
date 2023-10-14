@@ -11,12 +11,12 @@ public class Controller {
     public void appStart(BaseView[] view, String args) {
 
         if (args.equals("--help") || args.equals("-h")) {
-            System.out.println("\tДля работы в режиме администратора, введите аргумент:\n\t-adm (требуется пароль)");
-            System.out.println("\tДля работы в режиме потребителя, введите аргумент:\n\t-cns");
+            System.out.println("\tДля работы в режиме администратора, введите аргумент:\n\tadmin (требуется пароль)");
+            System.out.println("\tДля работы в режиме потребителя, введите аргумент:\n\tuser");
             return;
         }
 
-        if (args.equals("adm")) {
+        if (args.equals("admin")) {
             System.out.println("Режим работы: Администратора");
             System.out.println("============ Лотерея игрушек ===============");
 
@@ -24,7 +24,7 @@ public class Controller {
             return;
         }
 
-        if (args.equals("cns")) {
+        if (args.equals("user")) {
             System.out.println("Режим работы: Потребитель");
             System.out.println("============ Лотерея игрушек ===============");
 
